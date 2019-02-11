@@ -1,55 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Google-popup</title>
-    <link rel="stylesheet" href="css/main.css">
-  </head>
-  <body>
-    <header class="header">
-      <ul class="header__menu menu">
-        <li class="menu__item"><a class="menu__link" href="https://www.google.com/gmail/">Gmail</a></li>
-        <li class="menu__item"><a class="menu__link" href="https://www.google.com.ua/imghp?hl=ru">Images</a></li>
-        <li class="menu__item">
-          <label for="menu__trigger">
-            <div class="icon-menu" tabindex="1"></div>
-          </label>
-          <input class="menu__trigger" id="menu__trigger" type="checkbox">
-          <div class="submenu">
-            <input class="submenu__check-more" id="submenu__check-more" type="checkbox">
-            <label class="submenu__label" for="submenu__check-more">
-              <div class="submenu__btn-more" tabindex="13">
-                <p class="submenu__btn-text">More</p>
-              </div>
-            </label>
-            <div class="submenu__wrap"><a class="submenu__link" href="#" tabindex="4"><span class="submenu__icon sprite sprite-news"></span>
-                <h3 class="submenu__title">News</h3></a><a class="submenu__link" href="#" tabindex="4"><span class="submenu__icon sprite sprite-google"></span>
-                <h3 class="submenu__title">Caledar</h3></a><a class="submenu__link" href="#" tabindex="5"><span class="submenu__icon sprite sprite-search"></span>
-                <h3 class="submenu__title">Search</h3></a><a class="submenu__link" href="#" tabindex="6"><span class="submenu__icon sprite sprite-youtube"></span>
-                <h3 class="submenu__title">Youtube</h3></a><a class="submenu__link" href="#" tabindex="7"><span class="submenu__icon sprite sprite-drive"></span>
-                <h3 class="submenu__title">Drive</h3></a><a class="submenu__link" href="#" tabindex="8"><span class="submenu__icon sprite sprite-gmail"></span>
-                <h3 class="submenu__title">Gmail</h3></a><a class="submenu__link" href="#" tabindex="9"><span class="submenu__icon sprite sprite-calendar"></span>
-                <h3 class="submenu__title">News</h3></a><a class="submenu__link" href="#" tabindex="10"><span class="submenu__icon sprite sprite-google-plus"></span>
-                <h3 class="submenu__title">Google+</h3></a><a class="submenu__link" href="#" tabindex="11"><span class="submenu__icon sprite sprite-business"></span>
-                <h3 class="submenu__title">Business</h3></a><a class="submenu__link" href="#" tabindex="12"><span class="submenu__icon sprite sprite-photos"></span>
-                <h3 class="submenu__title">Photos</h3></a>
-              <div class="submenu__line"></div><a class="submenu__link" href="#"><span class="submenu__icon sprite sprite-adwords"></span>
-                <h3 class="submenu__title">Adwords</h3></a><a class="submenu__link" href="#"><span class="submenu__icon sprite sprite-sheets"></span>
-                <h3 class="submenu__title">Sheets</h3></a><a class="submenu__link" href="#"><span class="submenu__icon sprite sprite-slides"></span>
-                <h3 class="submenu__title">Slides</h3></a><a class="submenu__link" href="#"><span class="submenu__icon sprite sprite-translate"></span>
-                <h3 class="submenu__title">Translate</h3><a class="submenu__link-more" href="https://about.google/intl/en/products/?tab=wh">Even more from Google</a></a>
-            </div>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Google-popup</title>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+  <header class="header">
+    <ul class="header__menu menu">
+      <li class="menu__item">
+        <a class="menu__link" href="https://www.google.com/gmail/" tabindex="1">Gmail</a>
+      </li>
+      <li class="menu__item">
+        <a class="menu__link" href="https://www.google.com.ua/imghp?hl=ru" tabindex="2">Images</a>
+      </li>
+      <li class="menu__item">
+        <input class="menu__trigger" id="menu__trigger" type="checkbox" tabindex="3">
+        <label for="menu__trigger">
+          <div class="icon-menu"></div>
+        </label>
+        <div class="submenu">
+          <div class="submenu__wrap-before">
+            <a class="submenu__link" href="#" tabindex="4">
+              <span class="submenu__icon sprite sprite-news"></span>
+              <h3 class="submenu__title">News</h3>
+            </a>
+            <a class="submenu__link" href="#" tabindex="5">
+              <span class="submenu__icon sprite sprite-google"></span>
+              <h3 class="submenu__title">Caledar</h3>
+            </a>
+            <a class="submenu__link" href="#" tabindex="6">
+              <span class="submenu__icon sprite sprite-search"></span>
+              <h3 class="submenu__title">Search</h3>
+            </a>
+            <a class="submenu__link" href="#" tabindex="7">
+              <span class="submenu__icon sprite sprite-youtube"></span>
+              <h3 class="submenu__title">Youtube</h3>
+            </a>
+            <a class="submenu__link" href="#" tabindex="8">
+              <span class="submenu__icon sprite sprite-drive"></span>
+              <h3 class="submenu__title">Drive</h3>
+            </a>
+            <a class="submenu__link" href="#" tabindex="9">
+              <span class="submenu__icon sprite sprite-gmail"></span>
+              <h3 class="submenu__title">Gmail</h3>
+            </a>
+            <a class="submenu__link" href="#" tabindex="10">
+              <span class="submenu__icon sprite sprite-calendar"></span>
+              <h3 class="submenu__title">News</h3>
+            </a>
+            <a class="submenu__link" href="#" tabindex="11">
+              <span class="submenu__icon sprite sprite-google-plus"></span>
+              <h3 class="submenu__title">Google+</h3>
+            </a>
+            <a class="submenu__link" href="#" tabindex="12">
+              <span class="submenu__icon sprite sprite-business"></span>
+              <h3 class="submenu__title">Business</h3>
+            </a>
+            <a class="submenu__link" href="#" tabindex="13">
+              <span class="submenu__icon sprite sprite-photos"></span>
+              <h3 class="submenu__title">Photos</h3>
+            </a>
           </div>
-        </li>
-        <li class="menu__item"><a class="menu__link" href="#">
-            <div class="icon-circle" tabindex="2"></div></a></li>
-        <li class="menu__item"><a class="menu__link" href="#">
-            <div class="icon-account" tabindex="3">
-              <p class="icon-account__text">A</p>
-            </div></a></li>
-      </ul>
-    </header>
-  </body>
+          <input class="submenu__check-more" id="submenu__check-more" type="checkbox" tabindex="14">
+          <label class="submenu__label" for="submenu__check-more">
+            <div class="submenu__btn-more">
+              <p class="submenu__btn-text">More</p>
+            </div>
+          </label>
+          <div class="submenu__wrap-after">
+            <div class="submenu__line"></div>
+            <a class="submenu__link" href="#" tabindex="15">
+              <span class="submenu__icon sprite sprite-adwords"></span>
+              <h3 class="submenu__title">Adwords</h3>
+            </a>
+            <a class="submenu__link" href="#" tabindex="16">
+              <span class="submenu__icon sprite sprite-sheets"></span>
+              <h3 class="submenu__title">Sheets</h3>
+            </a>
+            <a class="submenu__link" href="#" tabindex="17">
+              <span class="submenu__icon sprite sprite-slides"></span>
+              <h3 class="submenu__title">Slides</h3>
+            </a>
+            <a class="submenu__link" href="#" tabindex="18">
+              <span class="submenu__icon sprite sprite-translate"></span>
+              <h3 class="submenu__title">Translate</h3>
+              <a class="submenu__link-more" href="https://about.google/intl/en/products/?tab=wh" tabindex="19">Even more from Google</a>
+            </a>
+          </div>
+        </div>
+      </li>
+      <li class="menu__item">
+        <a class="menu__link" href="#4" tabindex="20">
+          <div class="icon-circle"></div>
+        </a>
+      </li>
+      <li class="menu__item">
+        <a class="menu__link" href="#5" tabindex="21">
+          <div class="icon-account">
+            <p class="icon-account__text">A</p>
+          </div>
+        </a>
+      </li>
+    </ul>
+  </header>
+</body>
+
 </html>
